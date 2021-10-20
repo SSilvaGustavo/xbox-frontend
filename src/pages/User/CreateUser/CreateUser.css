@@ -1,0 +1,81 @@
+    .container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .form__card--create {
+        background-color: #ffffff80;
+        border-radius: 4%;
+        box-shadow: 3px 3px 1px 0px #00000060;
+        padding: 1em;
+        width: 40em;
+    }
+
+    .form__input_text--create {
+        display: flex;
+        width: 60%;
+        padding: .5em 2em .5em .2em;
+        border: 0;
+        border-bottom: 2px solid #077D07;
+        background-color: transparent;
+        outline: none;
+        min-width: 180px;
+        font-size: 1.2rem;
+        margin-bottom: 3em;
+        height: 20px;
+    }
+
+    .form__input_text--create:hover {
+        background-color: transparent;
+    }
+
+    .input__group--create {
+        display: flex;
+        justify-content: center;
+    }
+
+    .form__subbutton--create {
+        margin-top: 1em;
+        padding: 1em;
+        width: 210px;
+        color: #ffffff;
+        background-color: #077D07;
+        border: 0;
+        border-radius: 8%;
+        cursor: pointer;
+        margin-bottom: 3em;
+        font-size: 1rem;
+    }
+
+    .form__subbutton--create:hover {
+        background-color: #044D04;
+    }
+
+    .form__group--create {
+        margin-top: 1em;
+    }
+
+    .form__button--create {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        width: 200px;
+        height: 15px;
+        margin-top: 1em;
+        border: 1px solid #044D0490;
+        border-radius: 90px;
+        cursor: pointer;
+    }
+
+    .form__button--create:hover {
+        background-color: #077D0760
+    }
+
+    .form__button--create a {
+        text-decoration: none;
+        color: #044D04;
+        font-size: 1rem;
+    }
