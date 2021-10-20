@@ -27,6 +27,7 @@ export default function Header() {
             </Link>
             <Link to="/">Home</Link>
             {isLogged ? ( <Link to="/logout">Logout</Link>) : (<Link to="/login">Login</Link>) }
+            
         </header>
 
 
