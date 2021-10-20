@@ -5,7 +5,8 @@ import Header from './components/shared/Header/Header';
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
 import Logout from './pages/Logout/Logout';
-import "./styles/form.css"
+import "./styles/card.css"
+
 
 function App() {
   return (
