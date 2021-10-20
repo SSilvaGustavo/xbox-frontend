@@ -19,10 +19,10 @@ export default function Login(props) {
 
     const result = await response.json();
 
-    if (response.status === 201) {
+    if (response.status === 200) {
       const accessToken = result.accessToken;
 
-      JwtHandler.setJwt({ accessToken });
+      JwtHandler.setJwt(accessToken);
 
       props.history.push("/");
     } else {
@@ -32,10 +32,10 @@ export default function Login(props) {
   return (
     <div className="container">
       <div className="form__card">
-        <form className="form" onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
           <div className="input__group">
             <input
-              className="form__input"
+              className="form__input_text"
               type="text"
               id="email"
               name="email"
@@ -44,7 +44,7 @@ export default function Login(props) {
           </div>
           <div className="input__group">
             <input
-              className="form__input"
+              className="form__input_text"
               type="password"
               id="password"
               name="password"
@@ -54,14 +54,14 @@ export default function Login(props) {
 
           <div className="input__group">
             <input
-              className="form__submit"
+              className="form__subbutton"
               type="submit"
               value="Login"
             />
           </div>
           <div  className="form__group"> 
           <button  className="form__button"> 
-          <Link to="/">Create New Account</Link>
+          <Link to="/user/create">Create New Account</Link>
           </button>
           </div>
         </form>
