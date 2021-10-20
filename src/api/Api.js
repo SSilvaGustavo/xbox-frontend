@@ -11,7 +11,7 @@ export const Api = {
 
   readByUserId: (id) => Api.devUrl + "/user/" + id,
 
-  createUserUrl: (id) => Api.devUrl + "/user/" + id,
+  createUserUrl: () => Api.devUrl + "/user",
 
   updateUserUrl: (id) => Api.devUrl + "/user/" + id,
 
@@ -23,7 +23,7 @@ export const Api = {
 
   readByProfileId: (id) => Api.devUrl + "/profile/" + id,
 
-  createProfileUrl: (id) => Api.devUrl + "/profile/" + id,
+  createProfileUrl: () => Api.devUrl + "/profile/",
 
   updateProfileUrl: (id) => Api.devUrl + "/profile/" + id,
 
@@ -35,7 +35,7 @@ export const Api = {
 
   readByGamesId: (id) => Api.devUrl + "/games/" + id,
 
-  createGamesUrl: (id) => Api.devUrl + "/games/" + id,
+  createGamesUrl: () => Api.devUrl + "/games/",
 
   updateGamesUrl: (id) => Api.devUrl + "/games/" + id,
 
@@ -47,7 +47,7 @@ export const Api = {
 
   readByGenreId: (id) => Api.devUrl + "/genre/" + id,
 
-  createGenreUrl: (id) => Api.devUrl + "/genre/" + id,
+  createGenreUrl: () => Api.devUrl + "/genre/",
 
   updateGenreUrl: (id) => Api.devUrl + "/genre/" + id,
 
