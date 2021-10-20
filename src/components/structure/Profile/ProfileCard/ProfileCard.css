@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+.card {
+    cursor: pointer;
+    padding: 1em;
+    padding-left: 3em;
+    margin: 0.5em;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.card__title{
+    text-align: center;
+    color: #077D07
+}
+
+.card__price {
+    font-size: 1.5rem;
+}
+
+.card__image{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border: 1px none #000000;
+    border-radius: 50%;
+    box-shadow: 1px 5px 9px 0 #000000;
+    transition: transform 0.1s ease-in;
+}
+
+.card__image:hover{
+    transform: scale(1.1);
+}
+@keyframes scale-in-center{0%{transform:scale(0);opacity:1}100%{transform:scale(1);opacity:1}}

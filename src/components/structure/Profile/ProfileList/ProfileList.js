@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { Api } from "../../../../api/Api";import ProfileCard from "../ProfileCard/ProfileCard";
-
+import "./ProfileList.css"
 
 export const ProfileList = () => {
     const [profiles, setProfiles] = useState([]);
@@ -20,7 +20,7 @@ export const ProfileList = () => {
 
     return(
 
-        <div>
+        <div className="list">
             {profiles.map((profile, index) => (
                 <ProfileCard key={`profile_list_${index}`} profile={profile}/>
             ))}
