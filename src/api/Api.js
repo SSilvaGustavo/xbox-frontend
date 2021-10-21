@@ -1,7 +1,7 @@
 import { JwtHandler } from "../components/shared/jwt-handler/JwtHandler";
 
 export const Api = {
-  devUrl: "http://localhost:3000",
+  devUrl: "https://xbox-backend.herokuapp.com",
 
   loginUrl: () => Api.devUrl + "/login",
 
