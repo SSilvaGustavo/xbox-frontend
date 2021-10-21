@@ -22,9 +22,13 @@ export default function Login(props) {
     if (response.status === 200) {
       const accessToken = result.accessToken;
 
+      const UserID = result.UserID;
+
       JwtHandler.setJwt(accessToken);
 
-      props.history.push("/");
+      localStorage.setItem("ID_USER", UserID)
+
+      props.history.push("/profiles");
     } else {
     } 
   };
