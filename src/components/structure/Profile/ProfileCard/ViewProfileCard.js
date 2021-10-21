@@ -1,10 +1,10 @@
-import { useHistory } from "react-router";
+import { Redirect, useHistory } from "react-router";
 
-export default function ViewProfileCard({ profile }) {
+export default function ViewProfileCard({ profile }, { games }) {
   const history = useHistory();
 
   const handleClick = () => {
-    history.push(`/profile/view/${profile.idProfile}`);
+    history.push(`/game/view/${games.idGame}`);
   };
 
   return (
@@ -14,7 +14,7 @@ export default function ViewProfileCard({ profile }) {
             <div className="cont__image">
               <img
                 className="card__image"
-                src={games.cover}
+                src={profile.games.cover}
                 alt={`${games.title}'s cover`}
               />
             </div>
@@ -23,7 +23,6 @@ export default function ViewProfileCard({ profile }) {
             </div>
           </div>
         ))}
-        <div></div>
       </div>
   );
 }

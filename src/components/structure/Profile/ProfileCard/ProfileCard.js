@@ -7,7 +7,8 @@ export default function ProfileCard ({ profile }){
     const history = useHistory();
 
     const handleClick = () => {
-        history.push(`/profile/view/${profile.idProfile}`);
+        history.push(`/profile/favorites`);
+        localStorage.setItem("ID_PROFILE", profile.idProfile)
     };
 
     return(

@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react";
 import { Api } from "../../../api/Api";
+import GameCard from "../../../components/structure/Game/GameCard/GameCard";
 import ViewProfileCard from "../../../components/structure/Profile/ProfileCard/ViewProfileCard";
 
 
 export default function ViewProfile(props){
-    const id = props.match.params.id;
+    const id = localStorage.getItem("ID_PROFILE");
 
     const [profile, setProfile] = useState(undefined);
-    const [games, setGames] = useState(undefined);
 
     useEffect(() => {
         const loadProfile = async () => {
-            const response = await Api.buildApiGetRequest(Api.readByProfileId(id), true);
+            const response = await Api.buildApiGetRequest(Api.readAllGamesByProfileId(id), true);
 
             const results = await response.json();
 
@@ -28,7 +28,7 @@ export default function ViewProfile(props){
 
     return (
         <div className="profile">
-            <ViewProfileCard profile={profile}/>
+            <GameCard games={profile}/>
         </div>
 
 
