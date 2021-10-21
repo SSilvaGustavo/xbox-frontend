@@ -21,6 +21,8 @@ export const Api = {
 
   readAllProfileUrl: () => Api.devUrl + "/profile",
 
+  readAllProfileByUserId: (id) => Api.devUrl + "/profile/profilebyuser/" + id,
+
   readByProfileId: (id) => Api.devUrl + "/profile/" + id,
 
   createProfileUrl: () => Api.devUrl + "/profile/",
@@ -33,9 +35,11 @@ export const Api = {
 
   readAllGamesUrl: () => Api.devUrl + "/games",
 
+readAllGamesByProfileId: (id) => Api.devUrl + "/games/" + id,
+
   readByGamesId: (id) => Api.devUrl + "/games/" + id,
 
-  createGamesUrl: () => Api.devUrl + "/games/",
+  createGamesUrl: () => Api.devUrl + "/games",
 
   updateGamesUrl: (id) => Api.devUrl + "/games/" + id,
 
