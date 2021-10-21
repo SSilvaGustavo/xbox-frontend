@@ -1,11 +1,8 @@
-import { useState, useEffect} from "react";
 import { useHistory } from "react-router";
-import { Api } from "../../../../api/Api";
-import GenreCard from "../../Genre/GenreCard/GenreCard";
-
+import LinkButton from "../../../shared/LinkButton/LinkButton";
 
 export default function GameCard ({ games }){
-    
+
     const history = useHistory();
 
     const handleClick = () => {
@@ -19,13 +16,6 @@ export default function GameCard ({ games }){
             </div>
             <div className="cont__title">
             <h1 className="card__title">{games.title}</h1>
-            <div>
-                {games.genre.map((genre, index) => (
-                    <div key={`games_genre_${index}`}>
-                        <h1>{genre.name}</h1>    
-                    </div>
-                ))}
-            </div>
             </div>
         </div>
     )

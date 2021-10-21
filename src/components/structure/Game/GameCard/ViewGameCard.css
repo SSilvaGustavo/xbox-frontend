@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700&display=swap');
+
+.aventura{
+    color: #d00000
+}
+
+.fps{
+    color: #ee9b00
+}
+
+.fantasia{
+    color: #1d3557
+}
+
+.card--games{
+    flex-wrap: wrap;
+    padding: 1em;
+    margin: 2em;
+    background-color: #044D0460;
+    color: #fff;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.cont__image--games{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card__description--games{
+    font-size: 1.4em;
+    width: 50%;
+    line-height: 2.2em;
+}
+
+.card__image--games{
+    width: 600px;
+    height: 350px;
+    padding-right: 5em;
+}
+
+.card__genre--games{
+    display: flex;
+    padding: 1em;
+    margin-left: 6em;
+    font-size: 1.5em
+}
+
+.span--games{
+    text-align: center;
+    padding: 2.3em;
+}
+
+.card__title--games{
+    display: flex;
+    justify-content:center;
+    margin-bottom: 2em;
+    font-size: 3rem;
+    
+}
+
+.card__infos--games{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 3em;
+    font-size: 1.2rem;
+}
+
+.card__imdb--games{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.card__year--games{
+    padding-right: 12em;
+}
