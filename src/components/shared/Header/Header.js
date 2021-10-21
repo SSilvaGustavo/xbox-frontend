@@ -26,7 +26,12 @@ export default function Header() {
                 <img className="header__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Xbox_one_logo.svg/1024px-Xbox_one_logo.svg.png" alt="Xbox's Logo" />
             </Link>
             <Link to="/">Home</Link>
-            {isLogged ? ( <Link to="/logout">Logout</Link>) : (<Link to="/login">Login</Link>) }
+            <Link to="/profiles">Profiles</Link>
+            {isLogged ? (
+                <Link to="/logout">Logout</Link>
+            ) : (
+                <Link to="/login">Login</Link>
+            )}
             
         </header>
 
