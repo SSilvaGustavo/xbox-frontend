@@ -1,7 +1,11 @@
 import { useHistory } from "react-router";
+import "./GenreCard.css"
 
 
 export default function GenreCard ({ genre }){
+
+    
+    const color =  genre.name === "FPS"? "fps" : genre.name === "Aventura"? "aventura" : "fantansia"
 
     const history = useHistory();
 
@@ -10,11 +14,9 @@ export default function GenreCard ({ genre }){
     };
 
     return(
-        <div className="card" onClick={handleClick}>
-            <div className="cont__image">
-            <span className="card__title">{genre.name}</span>
+        <div className={color} onClick={handleClick}>
+            <span className={color}>{genre.name}</span>
             </div>
-        </div>
     )
 
 }
